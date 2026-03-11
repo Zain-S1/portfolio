@@ -4,27 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const metrics = [
-  { label: "SQL Projects", value: "35+" },
-  { label: "Dashboards Built", value: "48" },
-  { label: "Data Analyses", value: "120+" }
-];
-
+const highlights = ["SQL + Python Workflows", "Power BI Dashboards", "KPI Storytelling"];
 const partnerLogos = ["Mercury", "Ramp", "Hex", "Vercel", "Descript", "Cash App", "Runway"];
 
 const Hero = () => (
   <section id="hero" className="relative overflow-hidden pt-28 pb-24">
     <div className="absolute inset-0">
       <Image
-        src="/hero-image-placeholder.jpg"
+        src="/ai-hand-background.jpg"
         alt="AI and human hand reaching"
         fill
         priority
-        className="object-cover brightness-95 contrast-110"
+        className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-white/85 backdrop-blur-[1px]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.08),_transparent_55%)] opacity-60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/92 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.06),_transparent_60%)] opacity-70" />
     </div>
 
     <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-8 px-6 text-center text-black">
@@ -35,6 +30,16 @@ const Hero = () => (
           Data & Business Intelligence Analyst specializing in SQL, Python, and Power BI dashboards. I transform raw data
           into meaningful insights that help organizations make smarter decisions.
         </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          {highlights.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-black/10 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-black/60"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link
             href="#projects"
@@ -49,20 +54,6 @@ const Hero = () => (
             Contact Me
           </Link>
         </div>
-      </motion.div>
-
-      <motion.div
-        className="flex flex-wrap justify-center gap-4 rounded-3xl border border-black/5 bg-white/90 px-8 py-5 shadow-md"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-      >
-        {metrics.map((metric) => (
-          <div key={metric.label} className="min-w-[120px]">
-            <p className="text-3xl font-semibold">{metric.value}</p>
-            <p className="text-xs uppercase tracking-wide text-black/50">{metric.label}</p>
-          </div>
-        ))}
       </motion.div>
 
       <motion.div
