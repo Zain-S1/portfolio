@@ -24,7 +24,7 @@ const Hero = () => (
 
     <div className="relative mx-auto mt-20 flex max-w-4xl flex-col items-center gap-8 px-6 text-center text-black">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-        <p className="text-sm uppercase tracking-[0.4em] text-black/60">Data & BI Analyst</p>
+        <p className="text-sm uppercase tracking-[0.4em] text-black/60">Data & BI Analysis</p>
         <h1 className="mt-4 text-4xl font-semibold md:text-6xl">Turning Data Into Business Insights</h1>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           {highlights.map((item) => (
