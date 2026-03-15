@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 import "../styles/globals.css";
 
 type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Lato({ subsets: ["latin"], display: "swap", weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Zainab Alkholaif | Data & BI Analyst",

@@ -18,6 +18,7 @@ const Hero = () => (
         className="object-cover"
         sizes="100vw"
       />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6f6]" />
       <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/92 backdrop-blur-sm" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.06),_transparent_60%)] opacity-70" />
     </div>
