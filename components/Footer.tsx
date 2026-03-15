@@ -4,13 +4,13 @@ const Footer = () => (
       <p>Zainab Alkholaif</p>
       <p>© {new Date().getFullYear()} All rights reserved.</p>
       <div className="flex gap-4">
-        <a href="https://github.com/example" target="_blank" rel="noreferrer" className="hover:text-black">
+        <a href="https://github.com/Zain-S1" target="_blank" rel="noreferrer" className="hover:text-black">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/example" target="_blank" rel="noreferrer" className="hover:text-black">
+        <a href="https://www.linkedin.com/in/zainab-s-alkholaif" target="_blank" rel="noreferrer" className="hover:text-black">
           LinkedIn
         </a>
-        <a href="mailto:zainab@analytics.com" className="hover:text-black">
+        <a href="mailto:z.alkholaif@gmail.com" className="hover:text-black">
           Email
         </a>
       </div>
