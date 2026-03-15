@@ -8,7 +8,7 @@ const highlights = ["SQL + Python Workflows", "Power BI Dashboards", "KPI Storyt
 const partnerLogos = ["Mercury", "Ramp", "Hex", "Vercel", "Descript", "Cash App", "Runway"];
 
 const Hero = () => (
-  <section id="hero" className="relative overflow-hidden pt-40 pb-40">
+  <section id="hero" className="relative overflow-hidden pt-40 pb-60">
     <div className="absolute inset-0">
       <Image
         src="/ai-hand-background.png"
@@ -22,7 +22,7 @@ const Hero = () => (
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.06),_transparent_60%)] opacity-70" />
     </div>
 
-    <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-8 px-6 text-center text-black">
+    <div className="relative mx-auto mt-20 flex max-w-4xl flex-col items-center gap-8 px-6 text-center text-black">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
         <p className="text-sm uppercase tracking-[0.4em] text-black/60">Data & BI Analyst</p>
         <h1 className="mt-4 text-4xl font-semibold md:text-6xl">Turning Data Into Business Insights</h1>
