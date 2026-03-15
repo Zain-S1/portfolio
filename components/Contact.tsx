@@ -11,17 +11,17 @@ const Contact = () => (
         <p className="text-sm uppercase tracking-[0.4em] text-black/50">Contact</p>
         <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-3xl font-semibold text-black">Let's work together.</h2>
+            <h2 className="text-3xl font-semibold text-black">Let's work together!</h2>
             <p className="mt-2 text-black/60">
               Reach out for collaborations, analytics leadership roles, or data storytelling sprints.
             </p>
           </div>
           <div className="flex gap-3">
-            <a href="mailto:zainab@analytics.com" className="rounded-full bg-black px-5 py-3 text-sm font-semibold text-white">
+            <a href="mailto:z.alkholaif@gmail.com" className="rounded-full bg-black px-5 py-3 text-sm font-semibold text-white">
               Email
             </a>
             <a
-              href="https://www.linkedin.com/in/example"
+              href="https://www.linkedin.com/in/zainab-s-alkholaif"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-black/10 px-5 py-3 text-sm font-semibold text-black"
